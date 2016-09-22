@@ -9,7 +9,7 @@ app.set('views', path.join(__dirname, '/views'));
 app.use(express.static(path.join(__dirname, '/public')))
 
 var port = process.env.PORT || 3000;
-var server = app.listen(3000, function (){ 
+var server = app.listen(port, function (){ 
 	console.log('The app is listening on http://localhost:3000')
 });
 
